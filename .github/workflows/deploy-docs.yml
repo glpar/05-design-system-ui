@@ -20,6 +20,9 @@ jobs:
       - run: npm ci
 
       - run: npm run build
+        env:
+          TURBO_TOKEN: RXaF5avZDOFGmH4S1PXiOU0g
+          TURBO_TEAM: glpars-projects
 
       - name: Deploy storybook
         working-directory: ./packages/docs
